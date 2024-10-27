@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <div class="inputField">
+        <input type="text" placeholder="Enter new task" />
+        <select id="categorySelect"></select>
+        <button>Add</button>
+      </div>
+      <ul class="todoList"></ul>
+      <div class="footer">
+        <span id="pendingTasks"></span>
+        <button class="clearCompletedButton">Clear completed todos</button>
+      </div>
+      <div class="categoryManagement">
+        <h2>Categories</h2>
+        <div class="categoryInput">
+        <input
+          type="text"
+          id="newCategoryInput"
+          placeholder="New category name"
+        />
+        <button id="addCategoryButton">Add Category</button>
+        </div>
+        <ul id="categoryList"></ul>
+      </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    width: 100%;
+    padding: 1.25rem;
+    margin: 0.625rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.inputField {
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+.inputField input {
+    flex-grow: 1;
+    padding: 0.625rem;
+    border: 0.0625rem solid #d1d5db;
+    border-radius: 0.3125rem 0 0 0.3125rem;
+}
+
+.inputField button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0 0.3125rem 0.3125rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputField button:hover {
+    background-color: #2563eb;
+}
+
+.todoList {
+    list-style-type: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9fafb;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #e5e7eb;
+    margin-bottom: 0.625rem;
+}
+
+.todo-item .todo-checkbox {
+    margin-right: 0.625rem;
+}
+
+.todo-item .todo-text {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.todo-item .todo-text.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.todo-item button {
+    background-color: #f87171;
+    color: white;
+    border: none;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    margin-left: 0.625rem;
+    transition: background-color 0.3s;
+}
+
+.todo-item button.todo-edit-btn {
+    background-color: #f59e0b;
+}
+
+.todo-item button:hover {
+    opacity: 0.9;
+}
+
+.todo-item button.todo-edit-btn:hover {
+    background-color: #d97706;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.clearCompletedButton {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clearCompletedButton:hover {
+    background-color: #dc2626;
+}
+
+/* Categories */
+
+#categorySelect {
+    background-color:#45b11d;
+    color: white;
+    padding: .5rem;
+    font-size: .9rem;
+    border: none;
+    border-right: 2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+#categorySelect:hover {
+    background-color: #3a961d;
+}
+
+.categoryInput {
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+#newCategoryInput {
+    flex-grow: 1;
+    padding: 0.625rem;
+    border: 0.0625rem solid #d1d5db;
+    border-radius: 0.3125rem 0 0 0.3125rem;
+}
+
+#addCategoryButton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0 0.3125rem 0.3125rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addCategoryButton:hover {
+    background-color: #2563eb;
+}
+
+.categoryManagement {
+    margin-top: 2rem;
+}
+
+.categoryManagement h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#categoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categoryList li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #f9fafb;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #e5e7eb;
+    margin-bottom: 0.625rem;
+}
+
+#categoryList li span {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #374151;
+}
+
+#categoryList li input {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+#categoryList li button {
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+#categoryList li button:hover {
+    background-color: #d97706;
+}
+
+#categoryList li button:nth-child(3) {
+    background-color: #f87171;
+}
+
+#categoryList li button:nth-child(3):hover {
+    background-color: #dc2626;
+}
